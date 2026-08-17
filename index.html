@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudeep Sharma | Backend Engineer</title>
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'sans-serif'] },
+                    colors: {
+                        darkBg: '#0f172a',
+                        cardBg: '#1e293b',
+                        accent: '#38bdf8'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #0f172a; color: #f8fafc; }
+        .gradient-text { background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-image: linear-gradient(to right, #38bdf8, #818cf8); }
+    </style>
+</head>
+<body class="antialiased selection:bg-accent selection:text-darkBg">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 bg-darkBg/90 backdrop-blur-md border-b border-gray-800">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold tracking-tighter">sudip777<span class="text-accent">sharma</span></a>
+            <div class="space-x-6 text-sm font-medium hidden md:block">
+                <a href="#about" class="hover:text-accent transition">About</a>
+                <a href="#skills" class="hover:text-accent transition">Skills</a>
+                <a href="#projects" class="hover:text-accent transition">Projects</a>
+                <a href="#contact" class="hover:text-accent transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen flex items-center pt-20">
+        <div class="max-w-6xl mx-auto px-4 w-full">
+            <div class="max-w-3xl">
+                <p class="text-accent font-semibold mb-4 tracking-wide">Hi, I'm Sudeep Sharma.</p>
+                <h1 class="text-5xl md:text-7xl font-extrabold mb-6 leading-tight">
+                    I architect <span class="gradient-text">scalable APIs</span> & build cloud-native applications.
+                </h1>
+                <p class="text-gray-400 text-lg md:text-xl mb-10 leading-relaxed">
+                    Full-Stack Engineer (2 YoE) | Java, Spring Boot, React, AWS. Optimizing enterprise APIs and building serverless AI-app generators using Spring AI.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#projects" class="bg-accent text-darkBg px-8 py-3 rounded-lg font-bold hover:bg-sky-400 transition transform hover:-translate-y-1">View My Work</a>
+                    <a href="https://github.com/sudip777sharma" target="_blank" class="border border-gray-600 px-8 py-3 rounded-lg font-bold hover:border-accent hover:text-accent transition flex items-center gap-2">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-cardBg/50">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12 flex items-center gap-2"><i class="fas fa-terminal text-accent"></i> Core Arsenal</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-cardBg p-6 rounded-xl border border-gray-800 hover:border-accent transition">
+                    <h3 class="text-xl font-bold mb-4 border-b border-gray-700 pb-2">Backend & AI</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><i class="fas fa-check text-accent mr-2"></i> Java 8+ / Spring Boot</li>
+                        <li><i class="fas fa-check text-accent mr-2"></i> Spring AI (LLM Orchestration)</li>
+                        <li><i class="fas fa-check text-accent mr-2"></i> Node.js</li>
+                        <li><i class="fas fa-check text-accent mr-2"></i> Microservices & REST APIs</li>
+                    </ul>
+                </div>
+                <div class="bg-cardBg p-6 rounded-xl border border-gray-800 hover:border-accent transition">
+                    <h3 class="text-xl font-bold mb-4 border-b border-gray-700 pb-2">Cloud & Database</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><i class="fas fa-check text-accent mr-2"></i> AWS (Lambda, API Gateway)</li>
+                        <li><i class="fas fa-check text-accent mr-2"></i> DynamoDB</li>
+                        <li><i class="fas fa-check text-accent mr-2"></i> Hibernate / JPA Optimization</li>
+                        <li><i class="fas fa-check text-accent mr-2"></i> Serverless Architecture</li>
+                    </ul>
+                </div>
+                <div class="bg-cardBg p-6 rounded-xl border border-gray-800 hover:border-accent transition">
+                    <h3 class="text-xl font-bold mb-4 border-b border-gray-700 pb-2">Frontend Interfaces</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><i class="fas fa-check text-accent mr-2"></i> React.js</li>
+                        <li><i class="fas fa-check text-accent mr-2"></i> TailwindCSS</li>
+                        <li><i class="fas fa-check text-accent mr-2"></i> ShadCN UI</li>
+                        <li><i class="fas fa-check text-accent mr-2"></i> Infinite Scrolling Implementation</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12 flex items-center gap-2"><i class="fas fa-code-branch text-accent"></i> Featured Work</h2>
+            
+            <div class="space-y-12">
+                <!-- Project 1 -->
+                <div class="group bg-cardBg p-8 rounded-xl border border-gray-800 hover:border-gray-600 transition flex flex-col md:flex-row gap-8">
+                    <div class="md:w-2/3">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-2xl font-bold">AWS Serverless Document Portal</h3>
+                            <span class="bg-accent/10 text-accent px-3 py-1 rounded-full text-xs font-bold">Full Stack</span>
+                        </div>
+                        <p class="text-gray-400 mb-6 leading-relaxed">
+                            Architected a highly scalable UI utilizing React, TailwindCSS, and ShadCN. Bypassed Node.js server bottlenecks by implementing AWS S3 Pre-signed URLs for direct, secure file uploads. Handled massive datasets dynamically using DynamoDB pagination cursors to create a seamless infinite scrolling experience.
+                        </p>
+                        <div class="flex flex-wrap gap-2 text-xs font-mono text-gray-300">
+                            <span class="bg-gray-800 px-2 py-1 rounded">React</span>
+                            <span class="bg-gray-800 px-2 py-1 rounded">AWS Lambda</span>
+                            <span class="bg-gray-800 px-2 py-1 rounded">API Gateway</span>
+                            <span class="bg-gray-800 px-2 py-1 rounded">DynamoDB</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="group bg-cardBg p-8 rounded-xl border border-gray-800 hover:border-gray-600 transition flex flex-col md:flex-row gap-8">
+                    <div class="md:w-2/3">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-2xl font-bold">AI App Generator (Lovable Clone)</h3>
+                            <span class="bg-accent/10 text-accent px-3 py-1 rounded-full text-xs font-bold">In Progress</span>
+                        </div>
+                        <p class="text-gray-400 mb-6 leading-relaxed">
+                            Currently developing an AI-driven application generator leveraging the new Spring AI framework. Orchestrating complex LLM prompts directly within a Java backend to dynamically generate and output production-ready code blocks, bridging the gap between enterprise architecture and generative AI.
+                        </p>
+                        <div class="flex flex-wrap gap-2 text-xs font-mono text-gray-300">
+                            <span class="bg-gray-800 px-2 py-1 rounded">Java</span>
+                            <span class="bg-gray-800 px-2 py-1 rounded">Spring Boot</span>
+                            <span class="bg-gray-800 px-2 py-1 rounded">Spring AI</span>
+                            <span class="bg-gray-800 px-2 py-1 rounded">LLM Integration</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="group bg-cardBg p-8 rounded-xl border border-gray-800 hover:border-gray-600 transition flex flex-col md:flex-row gap-8">
+                    <div class="md:w-2/3">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-2xl font-bold">Enterprise API Optimization</h3>
+                            <span class="bg-accent/10 text-accent px-3 py-1 rounded-full text-xs font-bold">Backend Logic</span>
+                        </div>
+                        <p class="text-gray-400 mb-6 leading-relaxed">
+                            Secured REST APIs using complex Spring Security filters for multi-layered Role-Based Access Control (RBAC). Improved database latency by identifying and resolving N+1 query bottlenecks in Hibernate. Utilized Java CompletableFuture to handle asynchronous task processing without race conditions.
+                        </p>
+                        <div class="flex flex-wrap gap-2 text-xs font-mono text-gray-300">
+                            <span class="bg-gray-800 px-2 py-1 rounded">Spring Security</span>
+                            <span class="bg-gray-800 px-2 py-1 rounded">Hibernate/JPA</span>
+                            <span class="bg-gray-800 px-2 py-1 rounded">CompletableFuture</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Footer -->
+    <section id="contact" class="py-20 bg-cardBg/50 border-t border-gray-800 text-center">
+        <div class="max-w-3xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-6">Let's Build Something.</h2>
+            <p class="text-gray-400 mb-8">Currently open for new opportunities in full-stack and backend engineering.</p>
+            <a href="mailto:your-email@example.com" class="bg-accent text-darkBg px-8 py-3 rounded-lg font-bold hover:bg-sky-400 transition inline-flex items-center gap-2">
+                <i class="fas fa-paper-plane"></i> Get In Touch
+            </a>
+            
+            <div class="mt-12 flex justify-center gap-6 text-gray-400">
+                <a href="https://github.com/sudip777sharma" target="_blank" class="hover:text-accent transition text-2xl"><i class="fab fa-github"></i></a>
+                <a href="#" class="hover:text-accent transition text-2xl"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
