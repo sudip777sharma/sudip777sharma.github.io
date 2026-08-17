@@ -38,6 +38,7 @@
             <div class="space-x-6 text-sm font-medium hidden md:block">
                 <a href="#about" class="hover:text-accent transition">About</a>
                 <a href="#skills" class="hover:text-accent transition">Skills</a>
+                <a href="#experience" class="hover:text-accent transition">Experience</a>
                 <a href="#projects" class="hover:text-accent transition">Projects</a>
                 <a href="#contact" class="hover:text-accent transition">Contact</a>
             </div>
@@ -45,7 +46,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="min-h-screen flex items-center pt-20">
+    <section id="about" class="min-h-screen flex items-center pt-20">
         <div class="max-w-6xl mx-auto px-4 w-full">
             <div class="max-w-3xl">
                 <p class="text-accent font-semibold mb-4 tracking-wide">Hi, I'm Sudeep Sharma.</p>
@@ -101,6 +102,65 @@
         </div>
     </section>
 
+    <!-- Experience Section -->
+    <section id="experience" class="py-20">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12 flex items-center gap-2"><i class="fas fa-briefcase text-accent"></i> Experience</h2>
+
+            <div class="relative border-l border-gray-700 ml-3 md:ml-4 space-y-10">
+                <article class="relative ml-8 md:ml-10 bg-cardBg p-6 md:p-8 rounded-xl border border-gray-800 hover:border-gray-600 transition">
+                    <span class="absolute -left-[2.55rem] md:-left-[3.05rem] top-8 w-5 h-5 rounded-full bg-accent border-4 border-darkBg"></span>
+                    <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-3 mb-5">
+                        <div>
+                            <h3 class="text-xl md:text-2xl font-bold">Software Engineer</h3>
+                            <p class="text-accent font-semibold mt-1">Infosys <span class="text-gray-500 font-normal">• Bengaluru, India</span></p>
+                        </div>
+                        <span class="w-fit bg-accent/10 text-accent px-3 py-1 rounded-full text-xs font-bold">Aug 2024 - Present</span>
+                    </div>
+                    <p class="text-gray-400 leading-relaxed mb-5">
+                        Contributing to scalable AWS-based data management systems across React frontends, Spring Boot APIs, and serverless backend workflows.
+                    </p>
+                    <ul class="space-y-3 text-gray-400 mb-6">
+                        <li class="flex gap-3"><i class="fas fa-arrow-right text-accent mt-1"></i><span>Built an AWS resource-tags management dashboard using React, Lambda, and DynamoDB.</span></li>
+                        <li class="flex gap-3"><i class="fas fa-arrow-right text-accent mt-1"></i><span>Enhanced scalable RESTful backend services with Java, Spring Boot, and Lambda-based CRUD workflows.</span></li>
+                        <li class="flex gap-3"><i class="fas fa-arrow-right text-accent mt-1"></i><span>Optimized JPA/Hibernate queries, supported S3 bulk-upload pipelines, and improved CI/CD workflows with Jenkins.</span></li>
+                        <li class="flex gap-3"><i class="fas fa-arrow-right text-accent mt-1"></i><span>Strengthened API security through 42Crunch testing and improved large-data performance with pagination and efficient rendering.</span></li>
+                    </ul>
+                    <div class="flex flex-wrap gap-2 text-xs font-mono text-gray-300">
+                        <span class="bg-gray-800 px-2 py-1 rounded">Java</span>
+                        <span class="bg-gray-800 px-2 py-1 rounded">Spring Boot</span>
+                        <span class="bg-gray-800 px-2 py-1 rounded">AWS</span>
+                        <span class="bg-gray-800 px-2 py-1 rounded">React</span>
+                    </div>
+                </article>
+
+                <article class="relative ml-8 md:ml-10 bg-cardBg p-6 md:p-8 rounded-xl border border-gray-800 hover:border-gray-600 transition">
+                    <span class="absolute -left-[2.55rem] md:-left-[3.05rem] top-8 w-5 h-5 rounded-full bg-accent border-4 border-darkBg"></span>
+                    <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-3 mb-5">
+                        <div>
+                            <h3 class="text-xl md:text-2xl font-bold">Full Stack Engineer</h3>
+                            <p class="text-accent font-semibold mt-1">InterviewBuddy247 <span class="text-gray-500 font-normal">• Bengaluru, India</span></p>
+                        </div>
+                        <span class="w-fit bg-accent/10 text-accent px-3 py-1 rounded-full text-xs font-bold">Aug 2023 - Jul 2024</span>
+                    </div>
+                    <p class="text-gray-400 leading-relaxed mb-5">
+                        Spearheaded the end-to-end development of InterviewBuddy, a full-stack mock-interview platform.
+                    </p>
+                    <ul class="space-y-3 text-gray-400 mb-6">
+                        <li class="flex gap-3"><i class="fas fa-arrow-right text-accent mt-1"></i><span>Built product features across React, Node.js, Flask, and AWS.</span></li>
+                        <li class="flex gap-3"><i class="fas fa-arrow-right text-accent mt-1"></i><span>Led product design, real-time features, CI/CD, and iterative improvements guided by users.</span></li>
+                    </ul>
+                    <div class="flex flex-wrap gap-2 text-xs font-mono text-gray-300">
+                        <span class="bg-gray-800 px-2 py-1 rounded">React</span>
+                        <span class="bg-gray-800 px-2 py-1 rounded">Node.js</span>
+                        <span class="bg-gray-800 px-2 py-1 rounded">Flask</span>
+                        <span class="bg-gray-800 px-2 py-1 rounded">AWS</span>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
     <!-- Projects Section -->
     <section id="projects" class="py-20">
         <div class="max-w-6xl mx-auto px-4">
@@ -111,17 +171,18 @@
                 <div class="group bg-cardBg p-8 rounded-xl border border-gray-800 hover:border-gray-600 transition flex flex-col md:flex-row gap-8">
                     <div class="md:w-2/3">
                         <div class="flex justify-between items-start mb-4">
-                            <h3 class="text-2xl font-bold">AWS Serverless Document Portal</h3>
+                            <h3 class="text-2xl font-bold">AWS Resource Management Dashboard</h3>
                             <span class="bg-accent/10 text-accent px-3 py-1 rounded-full text-xs font-bold">Full Stack</span>
                         </div>
                         <p class="text-gray-400 mb-6 leading-relaxed">
-                            Architected a highly scalable UI utilizing React, TailwindCSS, and ShadCN. Bypassed Node.js server bottlenecks by implementing AWS S3 Pre-signed URLs for direct, secure file uploads. Handled massive datasets dynamically using DynamoDB pagination cursors to create a seamless infinite scrolling experience.
+                            Built a full-stack dashboard to make AWS resources easier to manage. The application extends visibility into resource tags with a workflow for viewing and updating resource metadata through a React interface and a serverless AWS backend.
                         </p>
                         <div class="flex flex-wrap gap-2 text-xs font-mono text-gray-300">
                             <span class="bg-gray-800 px-2 py-1 rounded">React</span>
                             <span class="bg-gray-800 px-2 py-1 rounded">AWS Lambda</span>
                             <span class="bg-gray-800 px-2 py-1 rounded">API Gateway</span>
                             <span class="bg-gray-800 px-2 py-1 rounded">DynamoDB</span>
+                            <span class="bg-gray-800 px-2 py-1 rounded">AWS Resource Tags</span>
                         </div>
                     </div>
                 </div>
@@ -149,16 +210,47 @@
                 <div class="group bg-cardBg p-8 rounded-xl border border-gray-800 hover:border-gray-600 transition flex flex-col md:flex-row gap-8">
                     <div class="md:w-2/3">
                         <div class="flex justify-between items-start mb-4">
-                            <h3 class="text-2xl font-bold">Enterprise API Optimization</h3>
-                            <span class="bg-accent/10 text-accent px-3 py-1 rounded-full text-xs font-bold">Backend Logic</span>
+                            <h3 class="text-2xl font-bold">Distributed Payment Gateway (Razorpay-Inspired)</h3>
+                            <span class="bg-accent/10 text-accent px-3 py-1 rounded-full text-xs font-bold">In Progress</span>
                         </div>
                         <p class="text-gray-400 mb-6 leading-relaxed">
-                            Secured REST APIs using complex Spring Security filters for multi-layered Role-Based Access Control (RBAC). Improved database latency by identifying and resolving N+1 query bottlenecks in Hibernate. Utilized Java CompletableFuture to handle asynchronous task processing without race conditions.
+                            Building a distributed payment gateway inspired by Razorpay, with a banking simulator for end-to-end payment flows. Designing the core domain, merchant and order APIs, and a payment-initiation API that uses the Strategy pattern to support multiple payment methods.
                         </p>
                         <div class="flex flex-wrap gap-2 text-xs font-mono text-gray-300">
+                            <span class="bg-gray-800 px-2 py-1 rounded">Java</span>
+                            <span class="bg-gray-800 px-2 py-1 rounded">Spring Boot</span>
                             <span class="bg-gray-800 px-2 py-1 rounded">Spring Security</span>
-                            <span class="bg-gray-800 px-2 py-1 rounded">Hibernate/JPA</span>
-                            <span class="bg-gray-800 px-2 py-1 rounded">CompletableFuture</span>
+                            <span class="bg-gray-800 px-2 py-1 rounded">Kafka</span>
+                            <span class="bg-gray-800 px-2 py-1 rounded">Redis</span>
+                            <span class="bg-gray-800 px-2 py-1 rounded">Webhooks</span>
+                        </div>
+                        <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-gray-400">
+                            <p class="flex gap-2"><i class="fas fa-check text-accent mt-1"></i><span>Applying idempotency, rate limiting, transaction locking, and Redis caching for reliable payment APIs.</span></p>
+                            <p class="flex gap-2"><i class="fas fa-check text-accent mt-1"></i><span>Exploring Kafka and the Outbox pattern for dependable asynchronous event processing.</span></p>
+                            <p class="flex gap-2"><i class="fas fa-check text-accent mt-1"></i><span>Implementing API-key authentication, webhooks, and state machines to manage payment lifecycles.</span></p>
+                            <p class="flex gap-2"><i class="fas fa-check text-accent mt-1"></i><span>Extending the platform with vault services, card payments, payment adapters, and production-minded schema design.</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="group bg-cardBg p-8 rounded-xl border border-gray-800 hover:border-gray-600 transition flex flex-col md:flex-row gap-8">
+                    <div class="md:w-2/3">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-2xl font-bold">Dashboard Main</h3>
+                            <span class="bg-accent/10 text-accent px-3 py-1 rounded-full text-xs font-bold">Full Stack</span>
+                        </div>
+                        <p class="text-gray-400 mb-6 leading-relaxed">
+                            Designed and developed a full-stack dashboard to manage structured data and business workflows. Built Spring Boot backend services with CRUD, filtering, and version-control capabilities, while creating a performant React interface for large datasets.
+                        </p>
+                        <div class="flex flex-wrap gap-2 text-xs font-mono text-gray-300">
+                            <span class="bg-gray-800 px-2 py-1 rounded">Java</span>
+                            <span class="bg-gray-800 px-2 py-1 rounded">Spring Boot</span>
+                            <span class="bg-gray-800 px-2 py-1 rounded">React</span>
+                            <span class="bg-gray-800 px-2 py-1 rounded">AWS Lambda</span>
+                            <span class="bg-gray-800 px-2 py-1 rounded">API Gateway</span>
+                            <span class="bg-gray-800 px-2 py-1 rounded">S3</span>
+                            <span class="bg-gray-800 px-2 py-1 rounded">DynamoDB</span>
                         </div>
                     </div>
                 </div>
